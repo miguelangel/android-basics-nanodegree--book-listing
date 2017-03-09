@@ -1,0 +1,36 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for the application. [CHAR LIMIT=30] -->
+    <string name="app_name">Book Listing</string>
+
+    <!-- Search results title [CHAR LIMIT=20] -->
+    <string name="search_results">Search results</string>
+
+    <!-- Hint for the search topics edit text [CHAR LIMIT-50] -->
+     <string name="search_topics_hint">Search books here...</string>
+
+    <!-- Search button text [CHAR LIMIT=20] -->
+    <string name="search">Search</string>
+
+    <!-- Parameter passed to the intent containing the results -->
+    <string name="param_results" translatable="false">param_results</string>
+
+    <!-- JSON items to be used during search response parse process -->
+    <string name="json_items">items</string>
+    <string name="json_volume_info">volumeInfo</string>
+    <string name="json_title">title</string>
+    <string name="json_publisher">publisher</string>
+    <string name="json_published_date">publishedDate</string>
+
+    <!-- No results message [CHAR LIMIT=100] -->
+    <string name="no_results">No results found.</string>
+    <!-- JSON sample response message -->
+
+    <!-- URL for searches -->
+    <string name="search_url">https://www.googleapis.com/books/v1/volumes?q=<xliff:g id="search_topics">%s</xliff:g>&amp;maxResults=40&amp;fields=items/volumeInfo(title,publisher,publishedDate)</string>
+
+
+    <!-- HttpURLConnection request parameters -->
+    <string name="param_connection_request_method">GET</string>
+    <string name="param_connection_request_property_1">Content-length</string>
+    <string name="param_connection_request_property_2">0</string>
+</resources>
